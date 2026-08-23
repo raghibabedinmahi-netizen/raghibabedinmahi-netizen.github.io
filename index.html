@@ -1,128 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghib Abedin | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome & Google Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/slack.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Chen | Digital Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Background Glowing Orbs -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Alex<span>Chen</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">Menu</button>
+    </nav>
+  </header>
 
-    <!-- Glassmorphism Navbar -->
-    <header class="glass-nav">
-        <nav class="navbar">
-            <h1 class="logo">&lt;Dev/&gt;<span>X</span></h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#contact" class="btn-glow">Let's Talk</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-tag">&lt;hello_world /&gt;</div>
+      <h1>Building the <span>Digital World</span><br>one line of code at a time.</h1>
+      <p>
+        I’m a Full-Stack Developer specializing in clean architecture, 
+        modern web technologies, and creating digital experiences that feel alive.
+      </p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </section>
 
-    <!-- Modern Hero Section -->
-    <section id="about" class="hero">
-        <div class="hero-content">
-            <div class="badge">🚀 Available for Freelance Work</div>
-            <h2 class="title-main">Building Digital <br> <span class="text-gradient">Experiences</span></h2>
-            <p class="subtitle">I help businesses grow by crafting high-performance, visually stunning, and conversion-focused websites.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">Explore Projects <i class="fas fa-arrow-right"></i></a>
-                <a href="https://github.com/" target="_blank" class="btn-icon"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/" target="_blank" class="btn-icon"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Who I am & what I do in the digital space</p>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Passionate developer with a love for elegant code and meaningful digital products. 
+          I transform complex problems into simple, beautiful, and high-performance solutions.
+        </p>
+        <p>
+          Whether it’s crafting pixel-perfect interfaces or designing robust backend systems, 
+          I believe great software lives at the intersection of creativity and precision.
+        </p>
+        <p>
+          Currently focused on modern web technologies, cloud architecture, and continuous learning.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3>5+</h3>
+          <p>Years Experience</p>
         </div>
-        <div class="hero-image">
-            <!-- Realistic placeholder for your professional photo -->
-            <div class="profile-card">
-                <img src="images/picture.jpg" alt="Profile">
-                <div class="floating-badge react"><i class="fab fa-react"></i></div>
-                <div class="floating-badge js"><i class="fab fa-js"></i></div>
-            </div>
+        <div class="stat-card">
+          <h3>40+</h3>
+          <p>Projects Delivered</p>
         </div>
-    </section>
-
-    <!-- Services Section (Crucial for Clients) -->
-    <section id="services" class="services">
-        <h2 class="section-title">What I Can Do For <span class="text-gradient">You</span></h2>
-        <div class="grid-container">
-            <div class="glass-card service-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Custom Web Development</h3>
-                <p>Fast, responsive, and SEO-friendly websites tailored exactly to your business needs.</p>
-            </div>
-            <div class="glass-card service-card">
-                <i class="fas fa-shopping-cart"></i>
-                <h3>E-Commerce Solutions</h3>
-                <p>Secure online stores with seamless payment gateways to help you sell products globally.</p>
-            </div>
-            <div class="glass-card service-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>UI/UX to Code</h3>
-                <p>Pixel-perfect conversion of Figma/Adobe XD designs into clean, maintainable code.</p>
-            </div>
+        <div class="stat-card">
+          <h3>15+</h3>
+          <p>Happy Clients</p>
         </div>
-    </section>
-
-    <!-- Advanced Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Recent <span class="text-gradient">Masterpieces</span></h2>
-        <div class="grid-container">
-            <!-- Project 1 -->
-            <div class="glass-card project-card">
-                <div class="project-img bg-gradient-1"></div>
-                <div class="project-content">
-                    <div class="tech-tags">
-                        <span>React</span><span>Node.js</span><span>Stripe</span>
-                    </div>
-                    <h3>Modern E-Commerce App</h3>
-                    <p>A full-stack store with cart functionality and real-time payment processing.</p>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live View</a>
-                        <a href="#"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="glass-card project-card">
-                <div class="project-img bg-gradient-2"></div>
-                <div class="project-content">
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JS</span><span>Tailwind</span>
-                    </div>
-                    <h3>Agency Landing Page</h3>
-                    <p>High-converting landing page optimized for speed and lead generation.</p>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live View</a>
-                        <a href="#"><i class="fab fa-github"></i> Source</a>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <h3>∞</h3>
+          <p>Lines of Code</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Call to Action / Contact -->
-    <section id="contact" class="contact">
-        <div class="glass-card contact-box">
-            <h2>Have a project in mind?</h2>
-            <p>Let's build something awesome together. I respond within 24 hours.</p>
-            <a href="mailto:hello@example.com" class="btn-primary pulse">Send me an Email <i class="fas fa-paper-plane"></i></a>
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Technologies I work with daily</p>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <ul class="skill-list">
+          <li>HTML5 / CSS3 / JavaScript</li>
+          <li>React / Next.js</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <ul class="skill-list">
+          <li>Node.js / Express</li>
+          <li>Python / Django</li>
+          <li>REST & GraphQL APIs</li>
+          <li>PostgreSQL / MongoDB</li>
+          <li>Authentication & Security</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools & Others</h3>
+        <ul class="skill-list">
+          <li>Git & GitHub</li>
+          <li>Docker / CI-CD</li>
+          <li>AWS / Vercel</li>
+          <li>Figma / UI Design</li>
+          <li>Agile Methodology</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Selected works from the digital world</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">// project_01</div>
+        <div class="project-content">
+          <h3>CodeForge Platform</h3>
+          <p>A collaborative coding environment with real-time collaboration and AI-assisted debugging.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">WebSocket</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="#">GitHub →</a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Developed with ❤️ by You. All Rights Reserved.</p>
-    </footer>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">// project_02</div>
+        <div class="project-content">
+          <h3>Neon Dashboard</h3>
+          <p>Modern analytics dashboard with real-time data visualization and dark-mode cyber aesthetic.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">D3.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="#">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">// project_03</div>
+        <div class="project-content">
+          <h3>Digital Portfolio CMS</h3>
+          <p>Headless CMS designed specifically for developers and creatives to showcase their work.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo →</a>
+            <a href="#">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Let’s build something great together</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>
+          Have a project in mind or just want to say hello?  
+          Feel free to reach out — I’m always open to discussing new ideas and opportunities.
+        </p>
+
+        <div class="contact-item">
+          <span>Email</span>
+          <a href="mailto:alex.chen@example.com">alex.chen@example.com</a>
+        </div>
+        <div class="contact-item">
+          <span>Location</span>
+          Remote / Worldwide
+        </div>
+        <div class="contact-item">
+          <span>GitHub</span>
+          <a href="#">github.com/alexchen</a>
+        </div>
+        <div class="contact-item">
+          <span>LinkedIn</span>
+          <a href="#">linkedin.com/in/alexchen</a>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Designed & built with <span class="code">&lt;code /&gt;</span> by Alex Chen<br>
+      © 2026 — All rights reserved.
+    </p>
+  </footer>
 
 </body>
 </html>
