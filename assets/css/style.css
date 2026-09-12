@@ -382,7 +382,6 @@ main {
 .sidebar.active { max-height: 405px; }
 
 .sidebar-info {
-  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
